@@ -10,7 +10,7 @@ floppy_bootsig_check: disabled=1
 # no floppya
 # no floppyb
 ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
-ata0-master: type=disk, path="/Users/gwwwwt/Desktop/nask/LEECHUNG.vhd", mode=flat, cylinders=1003, heads=12, spt=17, model="Generic 1234", biosdetect=auto, translation=auto
+ata0-master: type=disk, path="/Users/gwwwwt/Desktop/My Project/x86_assemble/LEECHUNG.vhd", mode=flat, cylinders=1003, heads=12, spt=17, model="Generic 1234", biosdetect=auto, translation=auto
 ata0-slave: type=none
 ata1: enabled=1, ioaddr1=0x170, ioaddr2=0x370, irq=15
 ata1-master: type=none
