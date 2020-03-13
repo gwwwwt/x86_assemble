@@ -20,7 +20,7 @@
          mov si,mytext                 
          mov di,0
          mov cx,(number-mytext)/2      ;实际上等于 13
-         rep movsw
+         rep movsw                     ;movsw 默认从DS:SI 传送到 ES:DI位置 此外rep表示执行由 CX 值指定的次数 即每执行一次movsw CX值减1 直到为0
      
          ;得到标号所代表的偏移地址
          mov ax,number
@@ -52,5 +52,5 @@
 
          jmp near $
 
-  times 510-($-$$) db 0
+  times 510-($-$$) db 0               ;$可以理解成当前行行首的标号 $$可以理解成段起始(这里可以理解成文件开头) 
                    db 0x55,0xaa

@@ -2,7 +2,6 @@
 
 本项目为《x86汇编语言: 从实模式到保护模式》一书的个人示例
 
-目录进度为第5章，
 
 中间按照随书资料中的方法安装Bochs进调试时遇到了两个问题：
 1. 书中示例是在windows系统中安装bochs，个人是在自己Macbook上通过brew安装的MacOS平台版本Bochs
@@ -25,3 +24,13 @@
 
 附MacOS版本: 10.15.2
 Bochs版本: 2.6.9
+
+MacOS相关软件均是通过brew安装,如nasm Bochs等软件
+但涉及到将编译后的bin文件写入虚拟硬盘是通过在Windows虚拟机上执行随书源码中的 fixvhdwr.exe 方式写入的，以后如果有时间再研究下.vhd的格式，尝试自己写一个MacOS版的工具
+
+目录进度为第6章，
+
+asm文件编译成bin文件命令: nasm -f bin a.asm -o a.bin
+
+
+截止: 2020年3月13日
