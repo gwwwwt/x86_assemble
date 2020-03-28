@@ -28,7 +28,9 @@ Bochs版本: 2.6.9
 MacOS相关软件均是通过brew安装,如nasm Bochs等软件
 但涉及到将编译后的bin文件写入虚拟硬盘是通过在Windows虚拟机上执行随书源码中的 fixvhdwr.exe 方式写入的，以后如果有时间再研究下.vhd的格式，尝试自己写一个MacOS版的工具
 
-目录进度为第7章，
+目录进度为第8章，
+
+第8章的内容开始涉及到通过mbr加载硬盘数据到内存指定位置，然后跳转到内存位置中的代码段start执行.耗费了很多时间去理解, mark.
 
 asm文件编译成bin文件命令: nasm -f bin a.asm -o a.bin
 
